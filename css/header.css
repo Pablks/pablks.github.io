@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+header {
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 18px;
+}
+
+header h2 {
+    font-size: 1.125em;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+header ul li:hover {
+    color: crimson;
+}
+
+.banner {
+    width: 100%;
+    height: 40rem;
+    background: #111;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 80px;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
