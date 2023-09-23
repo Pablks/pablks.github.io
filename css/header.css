@@ -9,6 +9,17 @@ header {
     font-size: 18px;
 }
 
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+.page-link-active {
+    font-weight: 500;
+    text-decoration: underline dashed 2px;
+    text-underline-offset: 0.3em;
+}
+
 header h2 {
     font-size: 1.125em;
     font-weight: 600;
@@ -42,16 +53,7 @@ header ul li {
     padding: 0 2rem;
 }
 
-header a {
-    text-decoration: none;
-    color: #222;
-}
 
-.page-link-active {
-    font-weight: 500;
-    text-decoration: underline dashed 2px;
-    text-underline-offset: 0.3em;
-}
 
 
 
