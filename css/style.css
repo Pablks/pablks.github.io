@@ -32,3 +32,26 @@ article {
 article h1 {
     text-align: center;
 }
+
+img {
+    max-width: 500px;
+    margin: auto;
+}
+
+.image-link {
+    font-size: 12px;
+    color: #444;
+}
+
+.image-link :hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.image {
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -14,7 +14,9 @@ header h2 {
     font-weight: 600;
 }
 
-
+header ul li a:hover {
+    color: crimson;
+}
 
 header ul {
     display: flex;
@@ -26,9 +28,6 @@ header ul li {
     cursor: pointer;
 }
 
-header ul li:hover {
-    color: crimson;
-}
 
 .banner {
     width: 100%;
@@ -43,8 +42,22 @@ header ul li:hover {
     padding: 0 2rem;
 }
 
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+.page-link-active {
+    font-weight: 500;
+    text-decoration: underline dashed 2px;
+    text-underline-offset: 0.3em;
+}
+
+
+
 @media only screen and (max-width: 460px) {
     header ul {
         display: none;
     }
   }
+
