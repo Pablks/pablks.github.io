@@ -39,6 +39,7 @@ header > a > span {
     bottom: 1px;
     font-size: 1.125rem;
     font-weight: 700;
+    transform: 400ms;
 }
 
 header nav {
@@ -56,6 +57,13 @@ header nav > a:hover {
     text-underline-offset: 0.3rem;
 }
 
+header a.icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
 main {
     margin-top: 3rem;
 }
@@ -63,6 +71,7 @@ main {
 #banner {
     height: 25rem;
     align-items: center;
+    padding: 2rem;
 }
 
 #banner div {
@@ -73,13 +82,9 @@ main {
 }
 
 #banner h1 {
-    font-size: 4rem;
-    max-width: 38rem;
+    font-size: 3rem;
+    max-width: 36rem;
     line-height: 4.375rem;
-}
-
-#banner svg {
-    height: 12rem;
 }
 
 #banner p {
@@ -91,7 +96,7 @@ main h1 {
 }
 
 section {
-    padding: 6rem;
+    padding: 4rem 2rem;
     line-height: 150%;
 }
 
@@ -138,4 +143,37 @@ h6 {
 
 section p {
     margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    header nav a {
+        display: none !important;
+    }
+    header a.icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav.responsive .icon {
+        position: absolute;
+        right: 1rem;
+        top: calc(1.5rem - 12px);
+        --fa-rotate-angle: -90deg;
+    }
+    #nav.responsive nav {
+        top: 3rem;
+        left: 0;
+        margin: 0;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 3rem);
+        background: #ddd;
+    }
+    #nav.responsive nav a {
+        float: none;
+        display: block !important;
+        text-align: left;
+    }
 }
