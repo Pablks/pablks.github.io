@@ -64,6 +64,40 @@ header a.icon {
     text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+    header nav a {
+        display: none !important;
+    }
+    header a.icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav.responsive .icon {
+        position: absolute;
+        right: 1rem;
+        top: calc(1.5rem - 12px);
+        --fa-rotate-angle: -90deg;
+    }
+    #nav.responsive nav {
+        top: 3rem;
+        left: 0;
+        margin: 0;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 3rem);
+        background: #ddd;
+    }
+    #nav.responsive nav a {
+        float: none;
+        display: block !important;
+        text-align: left;
+      }
+}
+
+
 main {
     margin-top: 3rem;
 }
@@ -151,29 +185,5 @@ section p {
     }
     header a.icon {
         display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #nav.responsive .icon {
-        position: absolute;
-        right: 1rem;
-        top: calc(1.5rem - 12px);
-        --fa-rotate-angle: -90deg;
-    }
-    #nav.responsive nav {
-        top: 3rem;
-        left: 0;
-        margin: 0;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 3rem);
-        background: #ddd;
-    }
-    #nav.responsive nav a {
-        float: none;
-        display: block !important;
-        text-align: left;
     }
 }
