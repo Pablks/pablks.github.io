@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #111;
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 3rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    padding: 0 1rem;
+    background: #fff;
+}
+
+header span {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+header a.icon {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    header nav a {
+        display: none !important;
+    }
+    header a.icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav.responsive .icon {
+        --fa-rotate-angle: -90deg;
+    }
+    #nav.responsive nav {
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 3rem);
+        background: #ddd;
+    }
+    #nav.responsive nav a {
+        display: block !important;
+      }
+}
+
+#banner {
+    height: 50vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    max-width: calc(600px + 6rem);
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h1 {
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section.ry {
+    background: #eee;
+}
+
+footer {
+    font-size: 0.75rem;
+    height: 3rem;
+    justify-content: start !important;
+    padding: 0 2rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+span {
+    background-color: yellow; /* Customize the styling as needed */
+    font-weight: bold;
+}
