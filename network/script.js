@@ -1,5 +1,6 @@
 function toggleNav() {
   var x = document.getElementById("nav");
+  var y = document.getElementById("bars");
   if (x.className === "flex") {
       x.className += " responsive";
   } else {
@@ -8,14 +9,10 @@ function toggleNav() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  var navLinks = document.querySelectorAll("header nav a");
-
+  var navLinks = document.querySelectorAll("header nav a"); 
   for (var i = 0; i < navLinks.length; i++) {
       navLinks[i].addEventListener("click", function() {
-      var nav = document.getElementById("nav");
-      if (nav.className.includes("responsive")) {
-          nav.className = "flex";
-      }
-    });
+          toggleNav();
+      });
   }
 });
