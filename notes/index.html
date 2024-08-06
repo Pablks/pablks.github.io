@@ -1,0 +1,23 @@
+<!doctype html>
+<html style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body class="text-sm text-black h-screen" style="font-family: GT America;">
+    <main class="w-full h-full flex flex-col">
+        <header class="w-full h-auto lg:p-4 md:p-2 sm:p-2">
+            <div class="h-9 w-full flex items-center justify-between">
+                <div class="cursor-pointer w-8 h-9 p-2 grid rounded place-items-center bg-none hover:bg-[#eff0f2]"><img src="data:image/svg+xml,%3csvg%20width='16'%20height='20'%20viewBox='0%200%2016%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20%3e%3cpath%20d='M12.9782%201H3.02176C1.90517%201%201%201.96442%201%203.1541V16.8459C1%2018.0356%201.90517%2019%203.02176%2019H12.9782C14.0948%2019%2015%2018.0356%2015%2016.8459V3.1541C15%201.96442%2014.0948%201%2012.9782%201Z'%20stroke='%238C919F'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3c/svg%3e" alt=""></div>
+                <div class="text-gray-500">
+                    <div id="counter" data-mode="word" class="cursor-pointer py-1.5 px-3">0 characters</div>
+                </div>
+            </div>
+        </header>
+        <textarea id="textarea" placeholder="Start typing.." class="placeholder:text-gray-200 tracking-widest w-full h-full resize-none outline-none px-32 text-lg text-gray-700 leading-relaxed caret-[rgb(71,135,238)]" style="padding: 1em max(-372px + 50vw, 1em)" name="" id=""></textarea>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
