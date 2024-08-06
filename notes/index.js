@@ -3,6 +3,7 @@ const icon = document.getElementById("icon");
 // const textarea = document.getElementById("textarea");
 
 textarea.addEventListener("input", updateCounter());
+textarea.addEventListener("change", updateCounter());
 
 counter.addEventListener("click", () => {
     counter.dataset.mode = counter.dataset.mode == "word" ? "char" : "word";
